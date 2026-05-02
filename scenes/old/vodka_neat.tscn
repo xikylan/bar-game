@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://s1vfj4ix055d"]
+
+[ext_resource type="Texture2D" uid="uid://cx1jmukw2swik" path="res://assets/glass_1_vodka.png" id="1_sj1ce"]
+
+[node name="VodkaNeat" type="Node2D" unique_id=1396061163]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1756244411]
+texture = ExtResource("1_sj1ce")

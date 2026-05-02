@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bpel7ugfe665j"]
+
+[ext_resource type="Script" uid="uid://davfqpnn4j4jg" path="res://scripts/tmp/ingredients/lime_juice.gd" id="1_stvdo"]
+
+[node name="LimeJuice" type="Node2D" unique_id=270015064]
+script = ExtResource("1_stvdo")
+
+[node name="Button" type="Button" parent="." unique_id=1564873946]
+offset_right = 35.0
+offset_bottom = 31.0
+mouse_default_cursor_shape = 2
+text = "Lime Juice"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

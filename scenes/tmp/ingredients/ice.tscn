@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bos3ha5n766ki"]
+
+[ext_resource type="Script" uid="uid://de4gvujexpyy2" path="res://scripts/tmp/ingredients/ice.gd" id="1_icdgr"]
+
+[node name="Ice" type="Node2D" unique_id=1308832022]
+script = ExtResource("1_icdgr")
+
+[node name="Button" type="Button" parent="." unique_id=1293653612]
+offset_right = 35.0
+offset_bottom = 31.0
+mouse_default_cursor_shape = 2
+text = "Ice
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

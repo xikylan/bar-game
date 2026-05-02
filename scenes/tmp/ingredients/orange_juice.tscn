@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://d2xi1a2bugo7x"]
+
+[ext_resource type="Script" uid="uid://dxburiqsq0k5a" path="res://scripts/tmp/ingredients/orange_juice.gd" id="1_4q5te"]
+
+[node name="OrangeJuice" type="Node2D" unique_id=1988388022]
+script = ExtResource("1_4q5te")
+
+[node name="Button" type="Button" parent="." unique_id=1312050420]
+offset_right = 35.0
+offset_bottom = 31.0
+mouse_default_cursor_shape = 2
+text = "Orange Juice"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

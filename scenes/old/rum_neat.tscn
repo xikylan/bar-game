@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b5y0kvk85etfr"]
+
+[ext_resource type="Texture2D" uid="uid://cowmva03rxi57" path="res://assets/glass_1_rum.png" id="1_g8ksr"]
+
+[node name="RumNeat" type="Node2D" unique_id=830055946]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=831507443]
+texture = ExtResource("1_g8ksr")

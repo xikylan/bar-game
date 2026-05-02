@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://r8jr8b8iaafj"]
+
+[node name="Vodka" type="Node2D" unique_id=1018514509]
+
+[node name="Label" type="Label" parent="." unique_id=401003350]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "vodka "

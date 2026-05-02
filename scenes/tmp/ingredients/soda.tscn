@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cosk8b14qg8nm"]
+
+[ext_resource type="Script" uid="uid://bygacwbab4cyd" path="res://scripts/tmp/ingredients/soda.gd" id="1_u6j0l"]
+
+[node name="Soda" type="Node2D" unique_id=625221940]
+script = ExtResource("1_u6j0l")
+
+[node name="Button" type="Button" parent="." unique_id=1224419797]
+offset_right = 35.0
+offset_bottom = 31.0
+mouse_default_cursor_shape = 2
+text = "Soda"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

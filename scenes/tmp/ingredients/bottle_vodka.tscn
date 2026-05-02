@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ldkrncjyha67"]
+
+[ext_resource type="Script" uid="uid://bv3vatlswdfja" path="res://scripts/tmp/ingredients/bottle_vodka.gd" id="1_wv7f0"]
+
+[node name="BottleVodka" type="Node2D" unique_id=232467868]
+script = ExtResource("1_wv7f0")
+
+[node name="Button" type="Button" parent="." unique_id=311332152]
+offset_right = 35.0
+offset_bottom = 31.0
+mouse_default_cursor_shape = 2
+text = "Vodka"
+
+[connection signal="clicked" from="." to="." method="_on_clicked"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

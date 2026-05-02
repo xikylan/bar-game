@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c1k5psdsc1dxg"]
+
+[ext_resource type="Script" uid="uid://dgs77bgimcosk" path="res://scripts/tmp/ingredients/syrup.gd" id="1_h2nf6"]
+
+[node name="Syrup" type="Node2D" unique_id=1946445905]
+script = ExtResource("1_h2nf6")
+
+[node name="Button" type="Button" parent="." unique_id=747371579]
+offset_right = 35.0
+offset_bottom = 31.0
+mouse_default_cursor_shape = 2
+text = "Syrup"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

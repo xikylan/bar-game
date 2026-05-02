@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://djuyys7olhhsc"]
+
+[ext_resource type="Texture2D" uid="uid://cgukbdlh4kseq" path="res://assets/bottle_vodka.png" id="1_6yi0u"]
+[ext_resource type="Script" uid="uid://by2rdc6sh0je0" path="res://scripts/bottle_vodka.gd" id="1_udd1u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_udd1u"]
+size = Vector2(21, 45)
+
+[node name="BottleVodka" type="Node2D" unique_id=210289168]
+script = ExtResource("1_udd1u")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1119860766]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1702411024]
+position = Vector2(5.5, 12.5)
+shape = SubResource("RectangleShape2D_udd1u")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D/CollisionShape2D" unique_id=2038598535]
+position = Vector2(-0.4999968, -1.2516975e-06)
+scale = Vector2(1.0000001, 1.0000001)
+texture = ExtResource("1_6yi0u")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://drb7yn53hig6l"]
+
+[ext_resource type="Script" uid="uid://eh0df7sfggfo" path="res://scripts/tmp/ingredients/clear.gd" id="1_83yoh"]
+
+[node name="Clear" type="Node2D" unique_id=1496420378]
+script = ExtResource("1_83yoh")
+
+[node name="Button" type="Button" parent="." unique_id=814362707]
+offset_right = 35.0
+offset_bottom = 31.0
+mouse_default_cursor_shape = 2
+text = "Clear"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

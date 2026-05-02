@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://tt7cqkcd13db"]
+
+[ext_resource type="Script" uid="uid://yyvjvivrexq4" path="res://scenes/tmp/ingredients/cola.gd" id="1_djc2o"]
+
+[node name="Cola" type="Node2D" unique_id=1607745158]
+script = ExtResource("1_djc2o")
+
+[node name="Button" type="Button" parent="." unique_id=477551699]
+offset_right = 35.0
+offset_bottom = 31.0
+mouse_default_cursor_shape = 2
+text = "Cola"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
