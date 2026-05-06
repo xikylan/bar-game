@@ -16,6 +16,7 @@ var current_mix = {
 }
 
 var drink_sprites = {
+	"empty_glass": preload("res://assets/drinks/empty_glass.png"),
 	"vodka": preload("res://assets/drinks/clear_spirit.png"),
 	"gin": preload("res://assets/drinks/clear_spirit.png"),
 	"tequila": preload("res://assets/drinks/clear_spirit.png"),
@@ -137,7 +138,7 @@ func _process(delta: float) -> void:
 func update_drink_sprite():
 	var current_mix_key = get_current_mix_key()
 	var current_drink_sprite = get_current_drink_sprite()
-	var is_valid = true if current_drink_sprite else false
+	var is_valid = true if current_drink_sprite != drink_sprites["empty_glass"] else false
 	label.update_label(current_mix_key, is_valid) 
 
 	current_drink.set_sprite(current_drink_sprite)
@@ -156,7 +157,7 @@ func get_current_mix_key() -> String:
 func get_current_drink_sprite():
 	var key = get_current_mix_key()
 	var sprite = drink_sprites.get(key, null)
-	return sprite
+	return sprite if sprite else drink_sprites["empty_glass"]
 
 func _on_clear_clicked() -> void:
 	reset_mix()
@@ -164,6 +165,7 @@ func _on_clear_clicked() -> void:
 func reset_mix():
 	for mix in current_mix:
 		current_mix[mix] = false
+	update_drink_sprite()
 	
 func _on_bottle_vodka_clicked() -> void:
 	current_mix["vodka"] = true

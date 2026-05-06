@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bn70kps4nskal"]
 
 [ext_resource type="Script" uid="uid://t04d0m8rjeel" path="res://scripts/current_drink.gd" id="1_d4y6t"]
-[ext_resource type="Texture2D" uid="uid://xjqwih84le4n" path="res://assets/drinks/glass.png" id="2_b5owd"]
+[ext_resource type="Texture2D" uid="uid://xjqwih84le4n" path="res://assets/drinks/empty_glass.png" id="2_b5owd"]
 
 [node name="CurrentDrink" type="Node2D" unique_id=196482619]
 script = ExtResource("1_d4y6t")
