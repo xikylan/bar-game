@@ -10,15 +10,5 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 	
-func update_label(mix_data: Dictionary, valid_mixes: Dictionary) -> void:
-	var result = []
-	for key in mix_data.keys():
-		if mix_data.get(key):
-			result.push_back(key)
-
-	result.sort()
-
-	var mix = ",".join(result)
-	var valid = valid_mixes.get(mix, null)
-
-	label.text = str(result) + (" valid" if valid else " invalid")
+func update_label(current_mix_key: String, is_valid: bool) -> void:
+	label.text = current_mix_key + "\n" + ("valid" if is_valid else "invalid")

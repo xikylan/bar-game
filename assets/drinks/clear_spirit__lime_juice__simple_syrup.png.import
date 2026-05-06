@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxpvumly487l"
-path="res://.godot/imported/lime_juice__ice__simple_syrup.png-e375389f09548da835b4b2035e8a4779.ctex"
+uid="uid://cha3h6lyasw16"
+path="res://.godot/imported/clear_spirit__lime_juice__simple_syrup.png-127795376ab9a5c0732f7bf3a62230ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/drinks/lime_juice__ice__simple_syrup.png"
-dest_files=["res://.godot/imported/lime_juice__ice__simple_syrup.png-e375389f09548da835b4b2035e8a4779.ctex"]
+source_file="res://assets/drinks/clear_spirit__lime_juice__simple_syrup.png"
+dest_files=["res://.godot/imported/clear_spirit__lime_juice__simple_syrup.png-127795376ab9a5c0732f7bf3a62230ec.ctex"]
 
 [params]
 

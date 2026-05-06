@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://bcmmk8w7rgh6b"]
-
-[ext_resource type="Texture2D" uid="uid://b343q8dwuktxo" path="res://assets/glass_empty.png" id="1_q3fkf"]
-
-[node name="GlassEmpty" type="Node2D" unique_id=1064969767]
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=42571603]
-texture = ExtResource("1_q3fkf")
