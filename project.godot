@@ -14,6 +14,10 @@ config/name="bar game"
 run/main_scene="res://scenes/bar_scene.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 
+[autoload]
+
+Data="*uid://bbgawq82e7s7u"
+
 [display]
 
 window/size/viewport_width=320
