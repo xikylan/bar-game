@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bxtsaragea8bo"]
+
+[ext_resource type="Script" uid="uid://ds0yk8sgug5mx" path="res://scripts/speech_bubble.gd" id="1_a8ruc"]
+
+[node name="SpeechBubble" type="Node2D" unique_id=129822749]
+script = ExtResource("1_a8ruc")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=425538889]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=804612737]
+layout_mode = 2

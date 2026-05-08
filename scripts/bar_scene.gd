@@ -5,13 +5,16 @@ var drink_sprites = Data.drink_sprites
 
 @onready var label = $Label
 @onready var current_drink = $CurrentDrink
+@onready var customer = $Customer
 
 func _init() -> void:
 	print("BARSCENE INIT")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	print("BARSCENE READY")
+	customer.hide_scene()
+	await get_tree().create_timer(2.0).timeout
+	customer.unhide_scene()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

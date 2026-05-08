@@ -16,6 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://bos3ha5n766ki" path="res://scenes/tmp/ingredients/ice.tscn" id="15_m7nk6"]
 [ext_resource type="PackedScene" uid="uid://d2xi1a2bugo7x" path="res://scenes/tmp/ingredients/orange_juice.tscn" id="15_tlcuc"]
 [ext_resource type="PackedScene" uid="uid://bn70kps4nskal" path="res://scenes/current_drink.tscn" id="16_avud4"]
+[ext_resource type="PackedScene" uid="uid://vaxavcvj8gig" path="res://scenes/customer.tscn" id="16_jfl6i"]
+[ext_resource type="Script" uid="uid://dbx6dxsbxew4p" path="res://scripts/customer.gd" id="17_tlcuc"]
+[ext_resource type="PackedScene" uid="uid://bxtsaragea8bo" path="res://scenes/speech_bubble.tscn" id="18_jfl6i"]
 
 [node name="BarScene" type="Node2D" unique_id=1222143027]
 script = ExtResource("1_m7nk6")
@@ -77,6 +80,13 @@ scale = Vector2(0.4, 0.4)
 [node name="Label" parent="." unique_id=585403266 instance=ExtResource("10_vbjob")]
 position = Vector2(7.999999, 8.000008)
 scale = Vector2(0.4, 0.4)
+
+[node name="Customer" parent="." unique_id=1488766163 instance=ExtResource("16_jfl6i")]
+position = Vector2(154, 44)
+script = ExtResource("17_tlcuc")
+
+[node name="SpeechBubble" parent="Customer" unique_id=129822749 instance=ExtResource("18_jfl6i")]
+position = Vector2(36, -27)
 
 [node name="CurrentDrink" parent="." unique_id=196482619 instance=ExtResource("16_avud4")]
 position = Vector2(154, 83)
