@@ -16,6 +16,7 @@ var current_mix = {
 }
 
 var drink_sprites = {
+	"invalid_drink": preload("res://assets/drinks/invalid_drink.png"),
 	"empty_glass": preload("res://assets/drinks/empty_glass.png"),
 	"vodka": preload("res://assets/drinks/clear_spirit.png"),
 	"gin": preload("res://assets/drinks/clear_spirit.png"),
