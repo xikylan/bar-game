@@ -1,8 +1,20 @@
 [gd_scene format=3 uid="uid://vaxavcvj8gig"]
 
 [ext_resource type="Texture2D" uid="uid://kmo58mwi2gu7" path="res://assets/npcs/customer_1.png" id="1_ktfjk"]
+[ext_resource type="Script" uid="uid://dbx6dxsbxew4p" path="res://scripts/customer.gd" id="1_rjbu2"]
+[ext_resource type="PackedScene" uid="uid://df5vif7og4m1r" path="res://scenes/tmp_customer_swap.tscn" id="2_8qg4y"]
+[ext_resource type="PackedScene" uid="uid://bxtsaragea8bo" path="res://scenes/speech_bubble.tscn" id="3_rjbu2"]
 
 [node name="Customer" type="Node2D" unique_id=1488766163]
+script = ExtResource("1_rjbu2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=432773693]
 texture = ExtResource("1_ktfjk")
+
+[node name="TmpCustomerSwap" parent="." unique_id=252404415 instance=ExtResource("2_8qg4y")]
+position = Vector2(-66.99999, -5.9999995)
+
+[node name="SpeechBubble" parent="." unique_id=129822749 instance=ExtResource("3_rjbu2")]
+position = Vector2(36, -29)
+
+[connection signal="clicked" from="TmpCustomerSwap" to="." method="_on_tmp_customer_swap_clicked"]

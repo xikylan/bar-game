@@ -18,7 +18,6 @@
 [ext_resource type="PackedScene" uid="uid://bn70kps4nskal" path="res://scenes/current_drink.tscn" id="16_avud4"]
 [ext_resource type="PackedScene" uid="uid://vaxavcvj8gig" path="res://scenes/customer.tscn" id="16_jfl6i"]
 [ext_resource type="Script" uid="uid://dbx6dxsbxew4p" path="res://scripts/customer.gd" id="17_tlcuc"]
-[ext_resource type="PackedScene" uid="uid://bxtsaragea8bo" path="res://scenes/speech_bubble.tscn" id="18_jfl6i"]
 
 [node name="BarScene" type="Node2D" unique_id=1222143027]
 script = ExtResource("1_m7nk6")
@@ -84,9 +83,6 @@ scale = Vector2(0.4, 0.4)
 [node name="Customer" parent="." unique_id=1488766163 instance=ExtResource("16_jfl6i")]
 position = Vector2(154, 44)
 script = ExtResource("17_tlcuc")
-
-[node name="SpeechBubble" parent="Customer" unique_id=129822749 instance=ExtResource("18_jfl6i")]
-position = Vector2(36, -27)
 
 [node name="CurrentDrink" parent="." unique_id=196482619 instance=ExtResource("16_avud4")]
 position = Vector2(154, 83)

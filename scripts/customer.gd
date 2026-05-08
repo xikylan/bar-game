@@ -1,6 +1,14 @@
 extends Node2D
 
 @onready var speech_bubble = $SpeechBubble
+@onready var sprite = $Sprite2D
+
+var customer_sprites = [
+	preload("res://assets/npcs/customer_1.png"),
+	preload("res://assets/npcs/customer_2.png"),
+	preload("res://assets/npcs/customer_3.png"),
+	preload("res://assets/npcs/customer_4.png"),
+]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -28,4 +36,11 @@ func queue_speech_bubble() -> void:
 	speech_bubble.show_text("short")
 	await get_tree().create_timer(2.0).timeout
 	speech_bubble.hide_bubble()
+	
+
+func _on_tmp_customer_swap_clicked() -> void:
+	random_customer()
+	
+func random_customer() -> void:
+	sprite.texture = customer_sprites.pick_random()
 	

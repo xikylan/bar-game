@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://df5vif7og4m1r"]
+
+[ext_resource type="Script" uid="uid://d2ogocidbd6fe" path="res://scripts/tmp_customer_swap.gd" id="1_8iv8c"]
+
+[node name="TmpCustomerSwap" type="Node2D" unique_id=252404415]
+scale = Vector2(0.4, 0.4)
+script = ExtResource("1_8iv8c")
+
+[node name="Button" type="Button" parent="." unique_id=38023869]
+offset_right = 8.0
+offset_bottom = 8.0
+mouse_default_cursor_shape = 2
+text = "Swap"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
